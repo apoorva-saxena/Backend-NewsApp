@@ -5,6 +5,9 @@ import FormControl from 'react-bootstrap/lib/FormControl'
 import LaddaButton from 'react-ladda'
 import 'ladda/dist/ladda-themeless.min.css'
 import './QuotesForm.css'
+import data from '../../data.json'
+
+console.log(JSON.parse(data))
 
 class QuotesEdit extends Component {
   constructor() {
@@ -27,7 +30,7 @@ class QuotesEdit extends Component {
   render() {
     return (
      <div>
-      
+
       </div>
     )
   }
