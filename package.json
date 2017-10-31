@@ -6,6 +6,7 @@
     "react": "^16.0.0",
     "react-bootstrap": "^0.31.5",
     "react-dom": "^16.0.0",
+    "react-ladda": "^5.0.7",
     "react-scripts": "1.0.14",
     "react-textarea-autosize": "^5.1.0"
   },
