@@ -1,4 +1,4 @@
-data = {
+export const data = {
     "quotedata": [
         {
             "value": "Nobody exists on purpose. Nobody belongs anywhere. We're all going to die. Come watch TV.",

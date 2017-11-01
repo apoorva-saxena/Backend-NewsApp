@@ -5,14 +5,11 @@ import FormControl from 'react-bootstrap/lib/FormControl'
 import LaddaButton from 'react-ladda'
 import 'ladda/dist/ladda-themeless.min.css'
 import './QuotesForm.css'
-import data from '../../data.json'
+import {data} from '../../data'
 
-console.log(JSON.parse(data))
+console.log(data)
 
 class QuotesEdit extends Component {
-  constructor() {
-    super()
-  }
 
   handleSubmit = (event) => {
     console.log("I was called")
@@ -30,7 +27,7 @@ class QuotesEdit extends Component {
   render() {
     return (
      <div>
-
+      <ListGroup></ListGroup>
       </div>
     )
   }
