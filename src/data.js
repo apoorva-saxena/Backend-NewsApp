@@ -1,5 +1,4 @@
-export const data = {
-    "quotedata": [
+export const quotes = [
         {
             "value": "Nobody exists on purpose. Nobody belongs anywhere. We're all going to die. Come watch TV.",
             "source": "Morty"
@@ -17,4 +16,3 @@ export const data = {
             "source": "Calvin and Hobbes"
         }
     ]
-}
