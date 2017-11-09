@@ -1,19 +1,22 @@
 {
-  "name": "react-forms",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.0.0",
-    "react-bootstrap": "^0.31.5",
-    "react-dom": "^16.0.0",
-    "react-ladda": "^5.0.7",
-    "react-scripts": "1.0.14",
-    "react-textarea-autosize": "^5.1.0"
-  },
+  "name": "news",
+  "version": "1.0.0",
+  "description": "slack bot for news",
+  "main": "server.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apoorva-saxena/react-forms.git"
+  },
+  "author": "Apoorva Saxena",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apoorva-saxena/react-forms/issues"
+  },
+  "homepage": "https://github.com/apoorva-saxena/react-forms#readme",
+  "dependencies": {
+    "express": "^4.16.2"
   }
 }
