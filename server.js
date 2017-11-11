@@ -1,7 +1,12 @@
+require('dotenv').config()
 const express = require('express')
-const app = express()
+const server = express()
+const getNews = require('./getNews')
+console.log(getNews)
 
-//call BBC news Api
-app.get('/', (req, res) => res.send('Hello World!'))
+const config = require('./config')
+// const app = require('./src/server')
 
-app.listen(3000, () => console.log('Example app listening on port 3000!'))
+console.log(config.key)
+
+server.listen(3000)
