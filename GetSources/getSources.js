@@ -2,7 +2,7 @@ require('dotenv').config()
 const config = require('./config')
 const axios = require('axios')
 
-const techCrunch = 'https://newsapi.org/v1/articles?source=techcrunch&apiKey=' + config.key
+// const techCrunch = 'https://newsapi.org/v1/articles?source=techcrunch&apiKey=' + config.key
 const sources = "https://newsapi.org/v1/sources"
 
 axios
