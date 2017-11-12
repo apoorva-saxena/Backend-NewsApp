@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/apoorva-saxena/react-forms#readme",
   "dependencies": {
+    "axios": "^0.17.1",
     "dotenv": "^4.0.0",
     "express": "^4.16.2",
     "node-env-file": "^0.1.8"
