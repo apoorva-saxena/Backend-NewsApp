@@ -18,7 +18,6 @@ server.post('/api/selected', bodyParser, (req, res) => {
   const selected = req.body.selected
   sess = req.session
   sess.selected = req.body.selected
-  // const allNews = await(selectedNews.getSelectedNews(selected))
   res
     .status(200)
     .send("Success");
