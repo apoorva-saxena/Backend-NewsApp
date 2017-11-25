@@ -1,2 +1,4 @@
-User should be abble to choose the news channel they want to see
-User should be able to see the latest news
+API /api/resources should display all the sources  
+API /api/techcrunch should display all relevant news  
+
+
