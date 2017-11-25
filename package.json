@@ -21,6 +21,7 @@
     "body-parser": "^1.18.2",
     "dotenv": "^4.0.0",
     "express": "^4.16.2",
+    "express-session": "^1.15.6",
     "node-env-file": "^0.1.8",
     "nodemon": "^1.12.1",
     "pg": "^6.1.0"
