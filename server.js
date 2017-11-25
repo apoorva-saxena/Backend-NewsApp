@@ -1,10 +1,10 @@
 const express = require('express')
 const server = express()
-const getNews = require('./GetSources')
+const sources = require('./lib/getSources')
 
-const config = require('./config')
-// const app = require('./src/server')
-
-console.log(config.key)
+server.get('/api/resources', async (req, res) => {
+  const resources = await(sources.getAllSources())
+  res.send(resources)
+})
 
 server.listen(3000)
