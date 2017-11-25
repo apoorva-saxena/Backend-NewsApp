@@ -25,7 +25,6 @@ server.post('/api/selected', bodyParser, (req, res) => {
 
 server.get('/api/selected-news', async(req, res) => {
   let allNews = "No news to display"
-  console.log(sess.selected)
   if(sess.selected) {
     allNews = await(selectedNews.getSelectedNews(sess.selected))
   }
