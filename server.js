@@ -16,5 +16,6 @@ server.post('/api/selected', bodyParser, async(req, res) => {
     .status(200)
     .send(allNews);
 })
+  
 
 server.listen(3000)
