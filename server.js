@@ -5,6 +5,7 @@ const server = express()
 const sources = require('./lib/getSources')
 const sourceData = require('./lib/getSourceData')
 const selectedNews = require('./lib/selectedNews')
+const allCountries = require('./lib/getCountries')
 const bodyParser = require('body-parser').json();
 const session = require('express-session');
 
@@ -18,6 +19,11 @@ server.get('/api/resources', async(req, res) => {
 server.get('/api/resources/:sectionName', async(req, res) => {
   const sectionData = await(sourceData.getSourceData(req.params.sectionName))
   res.send(sectionData)
+})
+
+server.get('/api/countries', async(req,res) => {
+  const countries = await(allCountries.getCountries())
+  res.send(countries)
 })
 
 // server.post('/api/selected', bodyParser, (req, res) => {
