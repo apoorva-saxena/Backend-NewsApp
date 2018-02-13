@@ -6,6 +6,7 @@ const sources = require('./lib/getSources')
 const sourceData = require('./lib/getSourceData')
 const selectedNews = require('./lib/selectedNews')
 const allCountries = require('./lib/getCountries')
+const allCountryNews = require('./lib/getCountryNews')
 const bodyParser = require('body-parser').json();
 const session = require('express-session');
 
@@ -24,6 +25,11 @@ server.get('/api/resources/:sectionName', async(req, res) => {
 server.get('/api/countries', async(req,res) => {
   const countries = await(allCountries.getCountries())
   res.send(countries)
+})
+
+server.get('/api/topNews/:country', async(req, res) => {
+  const countryNews = await(allCountryNews.getCountryNews(req.params.country))
+  res.send(countryNews)
 })
 
 // server.post('/api/selected', bodyParser, (req, res) => {
